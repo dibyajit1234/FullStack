@@ -31,7 +31,7 @@ app.use("/api/admin",adminRouter)
 app.use(errorMiddleware)
 
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 connectDB().then(()=>{
 app.listen(PORT,()=>{
