@@ -9,7 +9,7 @@ const AdminUser = () => {
 
   const getAllUsers=async()=>{
     try {
-      const response =await fetch("http://localhost:5000/api/admin/user",{
+      const response =await fetch("https://first-mern-backend-3jkq.onrender.com/api/admin/user",{
       method:"GET",
       headers:{
         Authorization: authorizationToken
@@ -24,7 +24,7 @@ const AdminUser = () => {
   }
   const deleteUser=async(id)=>{
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/user/delete/${id}`,{
+      const response = await fetch(`https://first-mern-backend-3jkq.onrender.com/api/admin/user/delete/${id}`,{
       method:"DELETE",
       headers:{
         Authorization:authorizationToken
