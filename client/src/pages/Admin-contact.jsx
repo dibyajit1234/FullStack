@@ -7,7 +7,7 @@ const AdminContact = () => {
   const [contact, setcontact] = useState([])
 
   const getAllContacts=async()=>{
-    const response = await fetch(`http://localhost:5000/api/admin/contact`,{
+    const response = await fetch(`https://first-mern-backend-3jkq.onrender.com/api/admin/contact`,{
       method:"GET",
       headers:{
         Authorization:authorizationToken,
@@ -22,7 +22,7 @@ const AdminContact = () => {
 
   const deleteContactById = async(id)=>{
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/contact/delete/${id}`,{
+      const response = await fetch(`https://first-mern-backend-3jkq.onrender.com/api/admin/contact/delete/${id}`,{
       method:"DELETE",
       headers:{
         Authorization:authorizationToken,
