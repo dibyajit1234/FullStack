@@ -28,7 +28,7 @@ export const AuthProvider=({children})=>{
     const userAuthentication = async()=>{
         try {
             setisLoading(true);
-            const response = await fetch("http://localhost:5000/api/auth/user",
+            const response = await fetch("https://first-mern-backend-3jkq.onrender.com/api/auth/user",
                 {
                     method:"GET",
                     headers:{
@@ -52,7 +52,7 @@ export const AuthProvider=({children})=>{
     //get service data
     const getService = async()=>{
         try {
-            const response = await fetch("http://localhost:5000/api/data/service",{
+            const response = await fetch("https://first-mern-backend-3jkq.onrender.com/api/data/service",{
                 method:"GET"
             })
             if(response.ok){
