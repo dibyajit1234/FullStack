@@ -17,7 +17,7 @@ const AdminUserUpdate = (props) => {
     //getuserbyid
     const getuserbyid=async()=>{
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/user/${id}`,{
+            const response = await fetch(`https://first-mern-backend-3jkq.onrender.com/api/admin/user/${id}`,{
             method:"GET",
             headers:{
                 Authorization:authorizationToken,
@@ -50,7 +50,7 @@ const AdminUserUpdate = (props) => {
     const handelSubmit=async(e)=>{
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/api/admin/user/update/${id}`,{
+            const response = await fetch(`https://first-mern-backend-3jkq.onrender.com/api/admin/user/update/${id}`,{
             method:"PATCH",
             headers:{
                 Authorization:authorizationToken,
