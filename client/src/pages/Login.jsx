@@ -26,7 +26,7 @@ const Login = () => {
     e.preventDefault(); 
     // console.log(User)
     try {
-      const response =await fetch(`http://localhost:5000/api/auth/login`,{
+      const response =await fetch(`https://first-mern-backend-3jkq.onrender.com/api/auth/login`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json",
