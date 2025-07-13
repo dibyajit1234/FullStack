@@ -36,7 +36,7 @@ const Contact = () => {
       // alert(Contact); 
       // console.log(Contact)
       try {
-        const response = await fetch(`http://localhost:5000/api/form/contact`,{
+        const response = await fetch(`https://first-mern-backend-3jkq.onrender.com/api/form/contact`,{
           method:"POST",
           headers:{
             "Content-Type":"application/json",
